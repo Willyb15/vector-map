@@ -1,4 +1,4 @@
-<html ng-app="mapApp">
+<html>
   <head>
     <title>JQVMap - World Map</title>
  <link rel="stylesheet" type="text/css" href="jqvmap.css">
@@ -6,9 +6,8 @@
     <script type="text/javascript" src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
     <script type="text/javascript" src="jquery.vmap.js"></script>
     <script type="text/javascript" src="jquery.vmap.world.js" charset="utf-8"></script>
-    <script type="text/javascript" src="country.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.9/angular.min.js"></script>
-    <script type="text/javascript" src="mapController.js"></script>
+
+    
 
     <script type="text/javascript">
     jQuery(document).ready(function() {
@@ -36,8 +35,7 @@
            + '" which has the code: '
            + code.toUpperCase();
 
-       alert(message);
-       
+       alert(message);  
    }
 });
 
@@ -45,8 +43,7 @@
     });
     </script>
   </head>
-  <body ng-controller="mapController">
+  <body>
     <div id="vmap" class="jqvmap" style="width: 600px; height: 400px;"></div>
-    {{message}}
   </body>
 </html>
