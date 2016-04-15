@@ -254,4 +254,5 @@ for (var i = 0; i < countriesArray.length; i++) {
     var country = countriesArray[i];
     countries[country.code] = country;
 }
+console.log(countries);
 
